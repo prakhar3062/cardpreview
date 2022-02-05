@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+    --Verydarkblue: hsl(217, 54%, 11%);
+    --VerydarkBlue: hsl(216, 50%, 16%);
+ --VeryDarkblue: hsl(215, 32%, 27%);
+ --White: hsl(0, 0%, 100%);
+
+}
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+  background-color: var(--Verydarkblue);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+}
+.card{
+    background: var(--VerydarkBlue);
+    border-radius: 15px;
+    width: 27rem;
+    padding: 1.5rem;
+}
+.image{
+    position: relative;
+
+}
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%,60%);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.image div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mainImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+h3{
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+.description{
+    margin: 0.3rem 0.5rem 0;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.price-days{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: hsl(178, 100%, 50%);
+}
+.price img{
+    margin-right: 5px;
+}
+.days{
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+.days img{
+    margin-right: 5px;
+}
+.creator{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.avtar{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+span{
+    color: white;
+    margin-left: 5px;
+}
+
+.mainImg,h3,span{
+    cursor: pointer;
+}
+h3:hover, span:hover{
+    color:hsl(178, 100%, 50%) ;
+}
